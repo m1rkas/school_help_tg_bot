@@ -26,6 +26,12 @@ b8_timetable = KeyboardButton(text="Всі уроки")
 kb_timetable.add(b1_timetable, b2_timetable, b3_timetable).add(b4_timetable, b5_timetable, b6_timetable).add(b7_timetable, b8_timetable).add(b_exit)
 
 
+kb_group_choice = ReplyKeyboardMarkup(resize_keyboard=True)
+b1_group = KeyboardButton(text="1 група")
+b2_group = KeyboardButton(text="2 група")
+kb_group_choice.add(b1_group, b2_group).add(b_exit)
+
+
 kb_lessons_schedule = ReplyKeyboardMarkup(resize_keyboard=True)
 b1_lessons_schedule = KeyboardButton(text=monday)
 b2_lessons_schedule = KeyboardButton(text=tuesday)
